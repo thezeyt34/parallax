@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>cordex</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preconnect" href="https://d2ol7oe51mr4n9.cloudfront.net" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+<div class="boot" id="boot">
+  <div class="bar"><i id="bootBar"></i></div>
+  <p id="bootPct">LOADING 0%</p>
+</div>
+
+<div class="nav-wrap">
+  <nav class="nav">
+    <a class="logo" href="#top" aria-label="cordex">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+        <circle cx="12" cy="12" r="10.2" stroke="white" stroke-width="1.4"/>
+        <path d="M8.2 16.4V7.6h4.1c2.05 0 3.25 1.05 3.25 2.55 0 1.08-.62 1.95-1.62 2.28L16.4 16.4h-2.2l-2.18-3.55H10v3.55H8.2zm1.8-5.15h2.02c.92 0 1.48-.5 1.48-1.22S13 8.8 12.08 8.8H10v2.45z" fill="white"/>
+      </svg>
+      <span>cordex</span>
+    </a>
+    <div class="seg">
+      <button type="button" id="btnFull" class="is-on">Full mode</button>
+      <button type="button" id="btnOverview">Explore</button>
+    </div>
+  </nav>
+</div>
+
+<div class="stage" id="stage">
+  <section class="layer hero" id="heroLayer">
+    <div class="hero-copy"><h1>We protect transport safer across all industries</h1></div>
+    <div class="hero-media">
+      <video id="heroVideo" muted playsinline webkit-playsinline preload="auto" disablepictureinpicture
+        poster="https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260906_211619_45cae3f3-ef0b-4c80-8102-d1b92a895304.png&w=1920&q=85"></video>
+    </div>
+  </section>
+
+  <section class="layer apps" id="appsLayer">
+    <!-- five .scene blocks (bg + cable images) are inserted here by main.js -->
+    <div class="apps-ui">
+      <div class="menu" id="menu"></div>
+      <div class="hotspot" aria-hidden="true"><i></i></div>
+      <article class="card" id="card"></article>
+    </div>
+    <a class="more" id="more" href="#">Learn more about…</a>
+  </section>
+</div>
+
+<div class="track" id="track"></div>
+<script src="main.js"></script>
+</body>
+</html>
